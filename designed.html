@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background: #e2b5b5;
+            padding: 50px;
+        }
+        .container {
+            background: rgb(255, 255, 255);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #1dc850;
+        }
+        .info {
+            margin: 50px 0;
+        }
+        input {
+            padding: 25px;
+            width: 80%;
+            margin: 80px 0;
+        }
+        button {
+            padding: 30px 50px;
+            border: none;
+            background: #007bff;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+        #output {
+            margin-top: 50px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Guessing Game</h1>
+        <p class="info">Round: <span id="round">1</span> | 🫶 <span id="lives">10</span></p>
+        <p>Enter Number: 0 - <span id="roundRange">10</span></p>
+        <input id="demo" type="number" placeholder="Your guess...">
+        <button id="btn">Submit</button>
+        <p id="output"></p>
+    </div>
+
+    <script src="./f.js"></script> 
+</body>
+</html>
